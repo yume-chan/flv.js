@@ -84,8 +84,8 @@ flvjs.LoggingControl = LoggingControl;
 Object.defineProperty(flvjs, 'version', {
     enumerable: true,
     get: function () {
-        // replaced by browserify-versionify transform
-        return '__VERSION__';
+        // replaced by WebpackDefinePlugin transform
+        return __VERSION__;
     }
 });
 
